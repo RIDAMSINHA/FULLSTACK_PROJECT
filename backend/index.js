@@ -28,7 +28,7 @@ app.post('/api/bfhl', (req, res) => {
     ? [alphabets.sort().reverse()[0]]
     : [];
 
-  // Create a response object; modify as needed
+  // Created a response object
   const response = {
     is_success: true,
     user_id: 'Ridam_Adtiya_Sinha_18062004',
@@ -42,7 +42,7 @@ app.post('/api/bfhl', (req, res) => {
   return res.json(response);
 });
 
-// Optional status endpoint
+// Status endpoint
 app.get('/api/bfhl', (req, res) => {
   res.json({ operation_code: 200 });
 });
