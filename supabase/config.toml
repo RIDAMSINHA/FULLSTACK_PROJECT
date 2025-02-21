@@ -1,0 +1,6 @@
+
+[global]
+project_id = "pcplrhmzywhmhexkxoee"
+
+[[global.cors]]
+origin = "*"
