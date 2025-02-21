@@ -14,7 +14,7 @@ export interface BFHLResponse {
 
 export const processBFHL = async (data: BFHLRequest): Promise<BFHLResponse> => {
   try {
-    const res = await fetch('http://localhost:3001/api/bfhl', {
+    const res = await fetch('https://fullstack-project-1-89qd.onrender.com/api/bfhl', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export const processBFHL = async (data: BFHLRequest): Promise<BFHLResponse> => {
 
 export const getBFHLStatus = async (): Promise<{ operation_code: number }> => {
   try {
-    const res = await fetch('http://localhost:3001/api/bfhl', {
+    const res = await fetch('https://fullstack-project-1-89qd.onrender.com/api/bfhl', {
       method: 'GET',
     });
     
